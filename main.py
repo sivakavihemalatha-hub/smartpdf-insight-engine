@@ -21,7 +21,7 @@ embedding_model = SentenceTransformer(
     "sentence-transformers/all-MiniLM-L6-v2"
 )
 
-BASE_PATH = "/content/drive/MyDrive/smartpdf_insight_engine/documents"
+BASE_PATH = "documents"
 
 
 # ==========================================
