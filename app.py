@@ -52,11 +52,14 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
+    UPLOAD_FOLDER = "uploads"
+
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
     file_path = os.path.join(
-        "/content",
+        UPLOAD_FOLDER,
         uploaded_file.name
     )
-
     with open(file_path, "wb") as f:
         f.write(uploaded_file.read())
 
