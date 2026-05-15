@@ -1,0 +1,12 @@
+streamlit
+pymupdf
+pdfplumber
+spacy
+langchain
+langchain-text-splitters
+keybert
+sentence-transformers
+groq
+python-dotenv
+faiss-cpu
+torch
