@@ -7,7 +7,7 @@ import sys
 # CONNECT BACKEND
 # ==========================================
 
-sys.path.append("/content/drive/MyDrive/smartpdf_insight_engine")
+sys.path.append(".")
 
 from main import process_document, ask_document_question
 
