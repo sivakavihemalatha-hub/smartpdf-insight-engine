@@ -11,4 +11,4 @@ sentence-transformers
 groq
 python-dotenv
 faiss-cpu
-torch==2.2.2+cpu
+torch==2.12.0+cpu
