@@ -19,7 +19,7 @@ from sentence_transformers import SentenceTransformer
 # This model converts text into semantic vectors.
 
 model = SentenceTransformer(
-    "sentence-transformers/all-MiniLM-L6-v2"
+    "sentence-transformers/paraphrase-MiniLM-L3-v2"
 )
 
 # ==========================================
