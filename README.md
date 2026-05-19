@@ -246,30 +246,45 @@ SmartPDF_Insight_Engine/
 
 # 📸 Application Screenshots
 
-## 📤 Upload Interface
+---
 
-```text
-Add Screenshot:
-assets/screenshots/upload_ui.png
-```
+## 1️⃣ Interface (Before Upload)
+
+<p align="center">
+  <img src="assets/screenshots/interface.png" width="90%">
+</p>
 
 ---
 
-## 📌 AI Generated Summary
+## 2️⃣ PDF Uploaded
 
-```text
-Add Screenshot:
-assets/screenshots/summary_output.png
-```
+<p align="center">
+  <img src="assets/screenshots/pdf_uploaded.png" width="90%">
+</p>
 
 ---
 
-## 💬 Document Question Answering
+## 3️⃣ AI Summary Output
 
-```text
-Add Screenshot:
-assets/screenshots/qa_output.png
-```
+<p align="center">
+  <img src="assets/screenshots/summary.png" width="90%">
+</p>
+
+---
+
+## 4️⃣ Keywords & Insights
+
+<p align="center">
+  <img src="assets/screenshots/insights_keywords.png" width="90%">
+</p>
+
+---
+
+## 5️⃣ Chat / RAG Question Answering
+
+<p align="center">
+  <img src="assets/screenshots/qa_output.png" width="90%">
+</p>
 
 ---
 
