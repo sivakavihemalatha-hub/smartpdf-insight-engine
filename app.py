@@ -16,11 +16,11 @@ from main import process_document, ask_document_question
 # ==========================================
 
 st.set_page_config(
-    page_title="Smart PDF AI",
+    page_title="SmartPDF Insight Engine",
     layout="wide"
 )
 
-st.title("📄 Smart PDF Intelligence System")
+st.title("📄 SmartPDF Insight Engine")
 
 # ==========================================
 # SESSION STATE
