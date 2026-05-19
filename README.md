@@ -230,8 +230,6 @@ SmartPDF_Insight_Engine/
 │       ├── summary_output.png
 │       └── qa_output.png
 │
-├── data/
-│
 └── utils/
     ├── validator.py
     ├── pdf_extractor.py
@@ -336,7 +334,7 @@ The project is deployed using:
 
 # 👩‍💻 Author
 
-## Hema S
+## Hemalatha Sivakavi
 
 AI/ML Enthusiast | Generative AI Developer | Document Intelligence Systems
 
