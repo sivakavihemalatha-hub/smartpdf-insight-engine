@@ -100,27 +100,9 @@ SmartPDF Insight Engine solves these challenges using AI-powered document intell
 
 ## Complete Pipeline Workflow
 
-```text
-PDF Upload
-    ↓
-PDF Validation
-    ↓
-Text + Table Extraction
-    ↓
-Text Cleaning & Preprocessing
-    ↓
-Semantic Chunking
-    ↓
-Embedding Generation
-    ↓
-FAISS Vector Indexing
-    ↓
-Hierarchical Summarization
-    ↓
-RAG-based Question Answering
-    ↓
-Context-Aware Responses
-```
+<p align="center">
+  <img src="assets/architecture.png" width="100%">
+</p>
 
 ---
 
