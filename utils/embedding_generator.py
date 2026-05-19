@@ -18,9 +18,26 @@ from sentence_transformers import SentenceTransformer
 # ==========================================
 # This model converts text into semantic vectors.
 
-model = SentenceTransformer(
-    "sentence-transformers/paraphrase-MiniLM-L3-v2"
-)
+
+# ==========================================
+# LOAD MODEL ONLY ONCE
+# ==========================================
+
+_embedding_model = None
+
+def get_embedding_model():
+
+    global _embedding_model
+
+    if _embedding_model is None:
+
+        _embedding_model = SentenceTransformer(
+            "sentence-transformers/paraphrase-MiniLM-L3-v2",
+            device="cpu"
+        )
+
+    return _embedding_model
+
 
 # ==========================================
 # FUNCTION:
@@ -33,11 +50,11 @@ model = SentenceTransformer(
 # Numerical vector embeddings
 # ==========================================
 
-def generate_embeddings(chunk_texts):
+def generate_embeddings(chunk_texts, model):
 
     embeddings = model.encode(
         chunk_texts,
-        show_progress_bar=True
+        show_progress_bar=False
     )
 
     return embeddings
