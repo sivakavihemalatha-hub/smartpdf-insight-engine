@@ -24,11 +24,15 @@ _embedding_model = None
 
 def get_embedding_model():
     global _embedding_model
+
     if _embedding_model is None:
         from sentence_transformers import SentenceTransformer
+
         _embedding_model = SentenceTransformer(
-            "sentence-transformers/all-MiniLM-L6-v2"
+            "sentence-transformers/paraphrase-MiniLM-L3-v2",
+            device="cpu"
         )
+
     return _embedding_model
 
 BASE_PATH = "documents"
@@ -71,7 +75,7 @@ def process_document(file_path):
 
     for i in range(0, len(texts), batch_size):
         batch = texts[i:i + batch_size]
-        batch_embeddings = generate_embeddings(batch)
+        batch_embeddings = generate_embeddings(batch, get_embedding_model())
         embeddings.extend(batch_embeddings.tolist())
 
     index = create_faiss_index(embeddings)
