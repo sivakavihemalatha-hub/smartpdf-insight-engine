@@ -21,14 +21,20 @@ AI-Powered Document Intelligence System with Semantic Retrieval, FAISS Vector Se
 
 </p>
 
-<p align="center">
-  <a href="https://smartpdf-insight-engine.onrender.com">
-    <img src="https://img.shields.io/badge/🚀_Live_Demo-Open_App-success?style=for-the-badge">
-  </a>
+---
 
-  <a href="https://github.com/sivakavihemalatha-hub/smartpdf-insight-engine">
-    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github">
-  </a>
+# 🚀 Live Demo & Repository
+
+<p align="center">
+
+<a href="https://smartpdf-insight-engine.onrender.com">
+  <img src="https://img.shields.io/badge/🚀_Live_Demo-Open_App-success?style=for-the-badge">
+</a>
+
+<a href="https://github.com/sivakavihemalatha-hub/smartpdf-insight-engine">
+  <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github">
+</a>
+
 </p>
 
 ---
