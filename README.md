@@ -5,7 +5,7 @@
 </p>
 
 <h3 align="center">
-Advanced AI-Powered Document Intelligence System using Semantic Retrieval, FAISS Vector Search, Hierarchical Summarization, and Retrieval-Augmented Generation (RAG)
+AI-Powered Document Intelligence System with Semantic Retrieval, FAISS Vector Search, Hierarchical Summarization, and RAG-based Question Answering
 </h3>
 
 ---
@@ -21,22 +21,54 @@ Advanced AI-Powered Document Intelligence System using Semantic Retrieval, FAISS
 
 </p>
 
+<p align="center">
+  <a href="https://smartpdf-insight-engine.onrender.com">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Open_App-success?style=for-the-badge">
+  </a>
+
+  <a href="https://github.com/sivakavihemalatha-hub/smartpdf-insight-engine">
+    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github">
+  </a>
+</p>
+
+---
+
+# 📑 Table of Contents
+
+- [Overview](#-overview)
+- [How It Works](#-how-it-works)
+- [Problem Statement](#-problem-statement)
+- [Key Features](#-key-features)
+- [System Architecture](#️-system-architecture)
+- [AI Pipeline Explanation](#-ai-pipeline-explanation)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Application Screenshots](#-application-screenshots)
+- [Installation](#️-installation)
+- [Live Demo & Deployment](#-live-demo--deployment)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [License](#-license)
+
 ---
 
 # 🚀 Overview
 
-SmartPDF Insight Engine is an advanced AI-powered document understanding system designed to intelligently process, summarize, retrieve, and answer questions from PDF documents using modern NLP and Retrieval-Augmented Generation (RAG) techniques.
+SmartPDF Insight Engine is an advanced AI-powered document intelligence system designed to intelligently process, summarize, retrieve, and answer questions from PDF documents using modern Natural Language Processing (NLP) and Retrieval-Augmented Generation (RAG) techniques.
 
-The system combines:
+The system combines semantic retrieval, vector search, hierarchical summarization, and context-aware question answering to transform traditional PDF documents into intelligent interactive knowledge systems.
 
-- 📑 PDF Extraction
-- 🧠 Semantic Chunking
-- 🔍 FAISS Vector Retrieval
-- 🤖 LLM-Powered Summarization
-- 💬 Context-Aware Question Answering
-- 📚 Retrieval-Augmented Generation (RAG)
+---
 
-to transform traditional PDFs into intelligent interactive knowledge systems.
+# 🔄 How It Works
+
+1. Upload a PDF document  
+2. Extract and clean document content  
+3. Perform semantic chunking  
+4. Generate vector embeddings  
+5. Store embeddings using FAISS  
+6. Generate AI-powered summaries and insights  
+7. Ask context-aware questions using RAG  
 
 ---
 
@@ -45,57 +77,58 @@ to transform traditional PDFs into intelligent interactive knowledge systems.
 Traditional PDF readers struggle to provide intelligent understanding of large and complex documents.
 
 Users often face:
-
 - Time-consuming manual reading
-- Difficulty extracting insights
-- Poor semantic search
+- Difficulty extracting key insights
+- Poor semantic search capabilities
 - Lack of contextual question answering
-- Inefficient navigation through lengthy PDFs
+- Inefficient navigation through lengthy documents
 
-SmartPDF Insight Engine solves these challenges using AI-powered document intelligence pipelines.
+SmartPDF Insight Engine solves these challenges using AI-powered document intelligence pipelines and semantic retrieval systems.
 
 ---
 
 # ✨ Key Features
 
 ## 📄 Intelligent PDF Processing
-- Validates uploaded PDF documents
-- Handles page limits and word constraints
-- Detects unsupported/scanned PDFs
+- PDF validation and verification
+- Page limit and file size handling
+- Detection of unsupported or scanned PDFs
 
 ## 🧹 Advanced Text Cleaning
 - Removes noisy formatting
-- Normalizes spacing and structure
-- Preserves document readability
+- Cleans invisible characters
+- Preserves semantic readability
+- Normalizes document structure
 
 ## ✂️ Semantic Chunking
 - Recursive semantic text splitting
-- Context-preserving chunk overlap
-- Optimized for retrieval accuracy
+- Context-preserving overlap strategy
+- Retrieval-optimized chunk generation
 
 ## 🧠 Embedding Generation
-- SentenceTransformer embeddings
+- SentenceTransformer-based embeddings
 - Semantic vector representation
-- Efficient batch embedding pipeline
+- Efficient embedding pipeline
 
-## 🔍 FAISS Vector Database
-- High-speed similarity search
-- Semantic document retrieval
-- Efficient vector indexing
+## 🔍 FAISS Vector Retrieval
+- High-speed semantic similarity search
+- Efficient nearest-neighbor retrieval
+- Vector indexing for scalable search
 
 ## 📌 Hierarchical AI Summarization
-- Structured heading-aware summaries
-- Key insights extraction
+- Heading-aware summarization
+- Key insight extraction
 - Intelligent keyword generation
+- Structured summary generation
 
 ## 💬 RAG-based Question Answering
 - Context-aware answer generation
-- Retrieves relevant document chunks
-- Prevents hallucinated responses
+- Retrieval-grounded responses
+- Reduced hallucinations using semantic retrieval
 
 ## 🌐 Interactive Streamlit Interface
-- PDF upload interface
-- Real-time summarization
+- Real-time PDF upload interface
+- AI-generated summaries and insights
 - Conversational document chat system
 
 ---
@@ -113,7 +146,8 @@ SmartPDF Insight Engine solves these challenges using AI-powered document intell
 # 🧠 AI Pipeline Explanation
 
 ## 1️⃣ PDF Validation
-The uploaded document is validated using:
+
+The uploaded PDF document is validated using:
 - File extension checking
 - File size constraints
 - Page count validation
@@ -123,71 +157,78 @@ The uploaded document is validated using:
 ---
 
 ## 2️⃣ Content Extraction
+
 The system extracts:
 - Page-wise text using PyMuPDF
 - Structured tables using pdfplumber
 
-The extracted content is then merged into a unified document structure.
+The extracted content is merged into a unified document structure for downstream processing.
 
 ---
 
 ## 3️⃣ Text Cleaning
+
 The preprocessing pipeline:
 - Removes unnecessary spaces
 - Cleans invisible characters
-- Normalizes paragraph formatting
+- Normalizes formatting
 - Preserves semantic readability
 
 ---
 
 ## 4️⃣ Semantic Chunking
-The cleaned text is split using:
+
+The cleaned text is divided using:
 
 `RecursiveCharacterTextSplitter`
 
-Features:
+### Features
 - Context-preserving overlap
-- Semantic splitting strategy
-- Retrieval-optimized chunk structure
+- Semantic chunk segmentation
+- Retrieval-optimized structure
 
 ---
 
 ## 5️⃣ Embedding Generation
+
 Document chunks are converted into semantic vectors using:
 
 `sentence-transformers/paraphrase-MiniLM-L3-v2`
 
-This enables semantic similarity search.
+This enables semantic similarity search and efficient retrieval.
 
 ---
 
 ## 6️⃣ FAISS Vector Search
+
 The generated embeddings are stored in a FAISS vector database for:
-- Fast retrieval
+- High-speed retrieval
 - Semantic search
 - Efficient nearest-neighbor lookup
 
 ---
 
 ## 7️⃣ Hierarchical Summarization
+
 The summarization engine:
-- Detects real headings/subheadings
+- Detects headings and subheadings
 - Preserves document hierarchy
-- Extracts key insights
+- Extracts important insights
 - Generates structured summaries
 
-Powered using:
+### Powered By
 - Groq LLM API
 - Llama-3.3-70B-Versatile
 
 ---
 
 ## 8️⃣ Retrieval-Augmented Generation (RAG)
+
 When a user asks a question:
 1. Relevant chunks are retrieved
 2. Context is constructed
-3. LLM generates grounded answers
-4. Hallucinations are minimized
+3. The LLM generates grounded answers
+4. Hallucinations are minimized through retrieval grounding
 
 ---
 
@@ -196,7 +237,7 @@ When a user asks a question:
 | Category | Technologies Used |
 |---|---|
 | Frontend | Streamlit |
-| Language | Python |
+| Programming Language | Python |
 | PDF Processing | PyMuPDF, pdfplumber |
 | NLP | NLTK |
 | Semantic Chunking | LangChain Text Splitters |
@@ -213,23 +254,24 @@ When a user asks a question:
 # 📂 Project Structure
 
 ```bash
-SmartPDF_Insight_Engine/
+smartpdf-insight-engine/
 │
 ├── app.py
 ├── main.py
 ├── config.py
 ├── requirements.txt
 ├── LICENSE
+├── README.md
 ├── .gitignore
 │
 ├── assets/
-│   ├── architecture.png
 │   ├── banner.png
+│   ├── architecture.png
 │   └── screenshots/
 │       ├── interface.png
 │       ├── pdf_uploaded.png
-│       └── summary.png
-├       └── insights_keywords.png
+│       ├── summary.png
+│       ├── insights_keywords.png
 │       └── qa_output.png
 │
 └── utils/
@@ -295,7 +337,7 @@ SmartPDF_Insight_Engine/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/sivakavihemalatha-hub/SmartPDF_Insight_Engine.git
+git clone https://github.com/sivakavihemalatha-hub/smartpdf-insight-engine.git
 ```
 
 ---
@@ -303,7 +345,7 @@ git clone https://github.com/sivakavihemalatha-hub/SmartPDF_Insight_Engine.git
 ## Move into Project Directory
 
 ```bash
-cd SmartPDF_Insight_Engine
+cd smartpdf-insight-engine
 ```
 
 ---
@@ -324,13 +366,13 @@ streamlit run app.py
 
 ---
 
-# 🌐 Deployment
+# 🚀 Live Demo & Deployment
 
-The project is deployed using:
+## Deployment Platforms
 - Render
 - Streamlit Framework
 
-## Live Demo
+## Live Application
 
 [Open SmartPDF Insight Engine](https://smartpdf-insight-engine.onrender.com)
 
@@ -345,7 +387,7 @@ The project is deployed using:
 - Citation-aware responses
 - Agentic AI workflows
 - Multi-language document understanding
-- Cloud vector database support
+- Cloud vector database integration
 
 ---
 
@@ -353,7 +395,10 @@ The project is deployed using:
 
 ## Hemalatha Sivakavi
 
-AI/ML Enthusiast | Generative AI Developer | Document Intelligence Systems
+AI/ML Enthusiast • Generative AI Developer • Document Intelligence Systems
+
+🔗 GitHub:
+https://github.com/sivakavihemalatha-hub
 
 ---
 
@@ -365,4 +410,4 @@ This project is licensed under the MIT License.
 
 # ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a star on GitHub.
