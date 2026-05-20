@@ -226,9 +226,15 @@ SmartPDF_Insight_Engine/
 │   ├── architecture.png
 │   ├── banner.png
 │   └── screenshots/
-│       ├── upload_ui.png
-│       ├── summary_output.png
+│       ├── interface.png
+│       ├── pdf_uploaded.png
+│       └── summary.png
+├       └── insights_keywords.png
 │       └── qa_output.png
+│
+│├── data/
+│     └── sample_documents/
+│         ├── research_paper.pdf
 │
 └── utils/
     ├── validator.py
