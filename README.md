@@ -232,10 +232,6 @@ SmartPDF_Insight_Engine/
 ├       └── insights_keywords.png
 │       └── qa_output.png
 │
-│├── data/
-│     └── sample_documents/
-│         ├── research_paper.pdf
-│
 └── utils/
     ├── validator.py
     ├── pdf_extractor.py
